@@ -18,10 +18,8 @@ public class TheaterController {
 
     @PostMapping
     Boolean configureTheater(@RequestBody TheaterConfigRequest configRequest){
-        // need validate
+        // need validations
         theaterService.configTheater(configRequest);
-
-
         return true;
     }
 }

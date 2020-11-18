@@ -12,6 +12,7 @@ public class TheaterService {
         int rows = theaterConfigRequest.getRows();
         int columns = theaterConfigRequest.getColumns();
         int[][] seatGraph = new int[rows][columns];
+
         theater.setRows(theaterConfigRequest.getRows());
         theater.setColumns(theaterConfigRequest.getColumns());
         theater.setMinDistance(theaterConfigRequest.getMinDistance());
@@ -22,6 +23,7 @@ public class TheaterService {
             }
             System.out.print("\n");
         }
+
         return true;
     }
 }
